@@ -7,7 +7,8 @@ const index = (req, res, next) => {
 };
 
 const iot = (req, res, next) => {
-  return res.status(200).json("ON");
+  // return plain text
+  return res.status(200).send("ON");
 };
 
 module.exports = {
